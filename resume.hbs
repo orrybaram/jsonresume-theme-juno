@@ -63,7 +63,7 @@
 			<div class="col-sm-6">
 				<strong>Website</strong>
 				<div class="website">
-					<a href="{{.}}">{{.}}</a>
+					<a target="_blank" href="{{.}}">{{.}}</a>
 				</div>
 			</div>
 			{{/website}}
@@ -98,7 +98,7 @@
 					<div class="username">
 						{{#if url}}
 						<div class="url">
-							<a href="{{url}}">{{username}}</a>
+							<a target="_blank" href="{{url}}">{{username}}</a>
 						</div>
 						{{else}}
 							{{username}}
@@ -107,7 +107,7 @@
 					{{else}}
 						{{#if url}}
 						<div class="url">
-							<a href="{{url}}">{{url}}</a>
+							<a target="_blank" href="{{url}}">{{url}}</a>
 						</div>
 						{{/if}}
 					{{/if}}
@@ -131,12 +131,12 @@
 				<h4 class="strike-through">
 					<span>{{company}}</span>
 					<span class="date">
-						{{startDate}} — {{endDate}}
+						{{startDate}} — {{#if endDate}}{{endDate}}{{else}}Present{{/if}}
 					</span>
 				</h4>
 				{{#website}}
 				<div class="website pull-right">
-					<a href="{{.}}">{{.}}</a>
+					<a target="_blank" href="{{.}}">{{.}}</a>
 				</div>
 				{{/website}}
 				{{#position}}
@@ -181,7 +181,7 @@
 				</h4>
 				{{#website}}
 				<div class="website pull-right">
-					<a href="{{.}}">{{.}}</a>
+					<a target="_blank" href="{{.}}">{{.}}</a>
 				</div>
 				{{/website}}
 				{{#position}}
@@ -303,7 +303,7 @@
 				</h4>
 				{{#website}}
 				<div class="website pull-right">
-					<a href="{{.}}"></a>
+					<a target="_blank" href="{{.}}"></a>
 				</div>
 				{{/website}}
 				{{#publisher}}

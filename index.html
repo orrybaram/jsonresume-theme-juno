@@ -16,16 +16,21 @@
 	https://fonts.googleapis.com/css?family=Lato:400,700
 );*/
 body {
-	background: #fff;
+	background: #F4F7F3;
 	margin: 0 0 80px;
 	
 }
 a {
-	color: #2ecc71;
+	color: #EF0E52;
+	font-weight: nor;
+	background-color: rgba(255, 0, 116, 0.03);
+	border-bottom: 1px dotted;
+	padding: 2px 5px;
 }
 a:focus,
 a:hover {
-	color: #f1c40f;
+	color: #F53795;
+	border-bottom: 1px solid;
 	text-decoration: none;
 }
 div, p {
@@ -46,15 +51,20 @@ h4 {
 section {
 	margin-top: 30px;
 }
+ul {
+	padding-left: 20px;
+}
 li {
-	line-height: 1.8;
+	line-height: 20px;
 	list-style: none;
+	margin-bottom: 10px;
+	color: #526651;
 }
 li:before {
 	content: "\f111";
 	float: left;
-	font: 13px FontAwesome;
-	margin-top: 6px;
+	font: 8px FontAwesome;
+	margin-top: 9px;
 	margin-left: -20px;
 	opacity: .1;
 	position: absolute;
@@ -86,7 +96,7 @@ h4 span:first-child {
 	margin-top: 30px;
 }
 #header {
-	background: #f4f6f6;
+	background: #fff;
 	padding: 50px 0;
 	margin-bottom: 30px;
 }
@@ -103,11 +113,14 @@ h4 span:first-child {
 	margin-top: 10px;
 }
 #content h3 {
-	color: #3DCB65;
+	color: #75A066;
 	font-size: 20px;
 	margin-top: -4px;
 	font-family: 'Roboto Mono';
 	font-weight: 300;
+	display: inline-block;
+	padding: 5px;
+	border-bottom: 1px dotted;
 }
 #content aside {
 	text-align: right;
@@ -118,8 +131,11 @@ h4 span:first-child {
 }
 #work .position,
 #volunteer .position {
-	font-weight: bold;
-	margin-bottom: 8px;
+	margin: 0px 0 10px;
+	font-family: 'Roboto Mono';
+	font-weight: 500;
+	font-size: 14px;
+	color: #55934B;
 }
 #education .area {
 	font-weight: bold;
@@ -148,7 +164,6 @@ h4 span:first-child {
 	}
 	.strike-through span,
 	.strike-through a {
-		background: #fff;
 		position: absolute;
 	}
 	.strike-through span:first-child {
@@ -183,12 +198,7 @@ h4 span:first-child {
 		font-size: 14px;
 		margin-bottom: 5px;
 	}
-	.strike-through span:first-child {
-		margin-bottom: 7px;
-	}
-	.strike-through span {
-		display: block;
-	}	
+	
 	#header {
 		margin-bottom: 10px;
 		padding: 40px 0;
@@ -235,7 +245,7 @@ h4 span:first-child {
 			<div class="col-sm-6">
 				<strong>Website</strong>
 				<div class="website">
-					<a href="http://orryb.com">http://orryb.com</a>
+					<a target="_blank" href="http://orryb.com">http://orryb.com</a>
 				</div>
 			</div>
 			</div>
@@ -261,7 +271,7 @@ h4 span:first-child {
 					</strong>
 					<div class="username">
 						<div class="url">
-							<a href="http://github.com/orrybaram">orrybaram</a>
+							<a target="_blank" href="http://github.com/orrybaram">orrybaram</a>
 						</div>
 					</div>
 				</div>
@@ -271,7 +281,7 @@ h4 span:first-child {
 					</strong>
 					<div class="username">
 						<div class="url">
-							<a href="http://codepen.io/orrybaram">orrybaram</a>
+							<a target="_blank" href="http://codepen.io/orrybaram">orrybaram</a>
 						</div>
 					</div>
 				</div>
@@ -281,7 +291,7 @@ h4 span:first-child {
 					</strong>
 					<div class="username">
 						<div class="url">
-							<a href="http://twitter.com/orrybaram">orrybaram</a>
+							<a target="_blank" href="http://twitter.com/orrybaram">orrybaram</a>
 						</div>
 					</div>
 				</div>
@@ -299,11 +309,11 @@ h4 span:first-child {
 				<h4 class="strike-through">
 					<span>Fancy Hands</span>
 					<span class="date">
-						2012-01-01 — 
+						2012-08-01 — Present
 					</span>
 				</h4>
 				<div class="website pull-right">
-					<a href="http://fancyhands.com">http://fancyhands.com</a>
+					<a target="_blank" href="http://fancyhands.com">http://fancyhands.com</a>
 				</div>
 				<div class="position">
 					Lead Front End Developer
@@ -326,11 +336,11 @@ h4 span:first-child {
 				<h4 class="strike-through">
 					<span>Trusted Insight, Inc.</span>
 					<span class="date">
-						2011-07-01 — 
+						2011-07-01 — Present
 					</span>
 				</h4>
 				<div class="website pull-right">
-					<a href="http://thetrustedinsight.com">http://thetrustedinsight.com</a>
+					<a target="_blank" href="http://thetrustedinsight.com">http://thetrustedinsight.com</a>
 				</div>
 				<div class="position">
 					Designer and Front End Developer
@@ -349,11 +359,11 @@ h4 span:first-child {
 				<h4 class="strike-through">
 					<span>Safe is Fast.</span>
 					<span class="date">
-						2011-05-01 — 
+						2011-05-01 — Present
 					</span>
 				</h4>
 				<div class="website pull-right">
-					<a href="http://safeisfast.com">http://safeisfast.com</a>
+					<a target="_blank" href="http://safeisfast.com">http://safeisfast.com</a>
 				</div>
 				<div class="position">
 					Designer and Front End Developer

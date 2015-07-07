@@ -2,16 +2,21 @@
 	https://fonts.googleapis.com/css?family=Lato:400,700
 );*/
 body {
-	background: #fff;
+	background: #F4F7F3;
 	margin: 0 0 80px;
 	
 }
 a {
-	color: #2ecc71;
+	color: #EF0E52;
+	font-weight: nor;
+	background-color: rgba(255, 0, 116, 0.03);
+	border-bottom: 1px dotted;
+	padding: 2px 5px;
 }
 a:focus,
 a:hover {
-	color: #f1c40f;
+	color: #F53795;
+	border-bottom: 1px solid;
 	text-decoration: none;
 }
 div, p {
@@ -32,9 +37,14 @@ h4 {
 section {
 	margin-top: 30px;
 }
+ul {
+	padding-left: 20px;
+}
 li {
-	line-height: 1.8;
+	line-height: 20px;
 	list-style: none;
+	margin-bottom: 10px;
+	color: #526651;
 }
 li:before {
 	content: "\f111";
@@ -72,7 +82,7 @@ h4 span:first-child {
 	margin-top: 30px;
 }
 #header {
-	background: #f4f6f6;
+	background: #fff;
 	padding: 50px 0;
 	margin-bottom: 30px;
 }
@@ -89,11 +99,14 @@ h4 span:first-child {
 	margin-top: 10px;
 }
 #content h3 {
-	color: #3DCB65;
+	color: #75A066;
 	font-size: 20px;
 	margin-top: -4px;
 	font-family: 'Roboto Mono';
 	font-weight: 300;
+	display: inline-block;
+	padding: 5px;
+	border-bottom: 1px dotted;
 }
 #content aside {
 	text-align: right;
@@ -104,8 +117,11 @@ h4 span:first-child {
 }
 #work .position,
 #volunteer .position {
-	font-weight: bold;
-	margin-bottom: 8px;
+	margin: 0px 0 10px;
+	font-family: 'Roboto Mono';
+	font-weight: 500;
+	font-size: 14px;
+	color: #55934B;
 }
 #education .area {
 	font-weight: bold;
@@ -134,7 +150,6 @@ h4 span:first-child {
 	}
 	.strike-through span,
 	.strike-through a {
-		background: #fff;
 		position: absolute;
 	}
 	.strike-through span:first-child {
@@ -169,12 +184,7 @@ h4 span:first-child {
 		font-size: 14px;
 		margin-bottom: 5px;
 	}
-	.strike-through span:first-child {
-		margin-bottom: 7px;
-	}
-	.strike-through span {
-		display: block;
-	}	
+	
 	#header {
 		margin-bottom: 10px;
 		padding: 40px 0;
