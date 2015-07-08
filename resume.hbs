@@ -167,7 +167,9 @@
 					{{#if highlights.length}}
 						<h4>Highlights</h4>
 						<ul class="highlights">
-							<li class="bullet">{{{highlights}}}</li>
+							{{#highlights}}
+							<li class="bullet">{{{.}}}</li>
+							{{/highlights}}
 							
 						</ul>
 					{{/if}}
@@ -179,7 +181,7 @@
 								<li class="bullet row side-project">
 									<div class="col-sm-4">
 										{{#if url}}
-											<a class="side-project--name" href="{{url}}">{{name}}</a>
+											<a target="_blank" class="side-project--name" href="{{url}}">{{name}}</a>
 										{{else}}
 											{{name}}
 										{{/if}}
@@ -189,7 +191,7 @@
 										{{{info}}}<br>
 										{{#if github_url}}
 											<i class="fa fa-github"></i>
-											<a style="font-size: 11px;" href="{{github_url}}">view on github</a>
+											<a target="_blank" class="simple-link" style="font-size: 11px;" href="{{github_url}}">view on github</a>
 										{{/if}}
 									</div>
 								</li>
@@ -372,7 +374,9 @@
 				</div>
 				{{#if keywords.length}}
 				<ul class="keywords">
-					<li>{{keywords}}</li>
+					{{#keywords}}
+					<li>{{.}}</li>
+					{{/keywords}}
 				</ul>
 				{{/if}}
 			</div>
@@ -419,7 +423,9 @@
 				
 				{{#if keywords.length}}
 				<ul class="keywords">
-					<li>{{keywords}}</li>
+					{{#keywords}}
+					<li>{{.}}</li>
+					{{/keywords}}
 				</ul>
 				{{/if}}
 			</div>

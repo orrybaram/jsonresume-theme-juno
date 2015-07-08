@@ -13,6 +13,12 @@ a {
 	border-bottom: 1px dotted;
 	padding: 2px 5px;
 }
+a.simple-link {
+	padding:0;
+	border:0;
+	background: none;
+}
+
 a:focus,
 a:hover {
 	color: #F53795;
