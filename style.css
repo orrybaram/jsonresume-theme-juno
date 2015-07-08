@@ -163,6 +163,22 @@ h4 span:first-child {
 		right: 0;
 	}
 }
+
+.side-projects {
+	padding: 0;
+}
+.side-project {
+	margin-bottom: 20px;
+}
+.side-project--name {
+	display: block;
+	font-size: 13px;
+}
+
+.side-project--description {
+	font-size: 14px;
+}
+
 @media (max-width: 768px) {
 	.col-sm-6:last-child {
 		margin-bottom: 0px;
