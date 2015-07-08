@@ -167,9 +167,8 @@
 					{{#if highlights.length}}
 						<h4>Highlights</h4>
 						<ul class="highlights">
-							{{#highlights}}
-							<li class="bullet">{{{.}}}</li>
-							{{/highlights}}
+							<li class="bullet">{{{highlights}}}</li>
+							
 						</ul>
 					{{/if}}
 
@@ -225,16 +224,15 @@
 					<a target="_blank" href="{{.}}">{{.}}</a>
 				</div>
 				{{/website}}
-				{{#position}}
+				
 				<div class="position">
-					{{.}}
+					{{position}}
 				</div>
-				{{/position}}
-				{{#summary}}
+				
 				<div class="summary">
-					<p>{{.}}</p>
+					<p>{{summary}}</p>
 				</div>
-				{{/summary}}
+				
 				{{#if highlights.length}}
 				<h4>Highlights</h4>
 				<ul class="highlights">
@@ -265,23 +263,18 @@
 						{{startDate}} — {{endDate}}
 					</span>
 				</h4>
-				{{#area}}
 				<div class="area">
 					<i class="fa fa-graduation-cap"></i> 
-					{{.}}
+					{{area}}
 				</div>
-				{{/area}}
-				{{#studyType}}
+				
 				<div class="studyType">
-					{{.}}
+					{{studyType}}
 				</div>
-				{{/studyType}}
 				{{#if courses.length}}
 				<h4>Courses</h4>
 				<ul class="courses">
-					{{#courses}}
-					<li>{{.}}</li>
-					{{/courses}}
+					<li>{{courses}}</li>
 				</ul>
 				{{/if}}
 			</div>
@@ -342,22 +335,22 @@
 						{{releaseDate}}
 					</span>
 				</h4>
-				{{#website}}
+				
 				<div class="website pull-right">
-					<a target="_blank" href="{{.}}"></a>
+					<a target="_blank" href="{{website}}"></a>
 				</div>
-				{{/website}}
-				{{#publisher}}
+				
+				
 				<div class="publisher">
 					<em>Published by</em>
-					<strong>{{.}}</strong>
+					<strong>{{publisher}}</strong>
 				</div>
-				{{/publisher}}
-				{{#summary}}
+				
+				
 				<div class="summary">
-					<p>{{.}}</p>
+					<p>{{summary}}</p>
 				</div>
-				{{/summary}}
+				
 			</div>
 			{{/each}}
 			</div>
@@ -374,16 +367,12 @@
 			<div class="row">
 			{{#each resume.skills}}
 			<div class="col-sm-4">
-				{{#name}}
 				<div class="name">
-					<h4>{{.}}</h4>
+					<h4>{{name}}</h4>
 				</div>
-				{{/name}}
 				{{#if keywords.length}}
 				<ul class="keywords">
-					{{#keywords}}
-					<li>{{.}}</li>
-					{{/keywords}}
+					<li>{{keywords}}</li>
 				</ul>
 				{{/if}}
 			</div>
@@ -402,16 +391,12 @@
 			<div class="row">
 			{{#each resume.languages}}
 			<div class="col-sm-6">
-				{{#language}}
 				<div class="language">
-					<strong>{{.}}</strong>
+					<strong>{{language}}</strong>
 				</div>
-				{{/language}}
-				{{#fluency}}
 				<div class="fluency">
-					{{.}}
+					{{fluency}}
 				</div>
-				{{/fluency}}
 			</div>
 			{{/each}}
 			</div>
@@ -428,16 +413,13 @@
 			<div class="row">
 			{{#each resume.interests}}
 			<div class="col-sm-6">
-				{{#name}}
 				<div class="name">
-					<h4>{{.}}</h4>
+					<h4>{{name}}</h4>
 				</div>
-				{{/name}}
+				
 				{{#if keywords.length}}
 				<ul class="keywords">
-					{{#keywords}}
-					<li>{{.}}</li>
-					{{/keywords}}
+					<li>{{keywords}}</li>
 				</ul>
 				{{/if}}
 			</div>
